@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+ 
+  <style>
+    body
+    {
+      background-color: hsl(0, 0%, 95%);
+    }
+.container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: hsl(0, 0%, 95%);
+}
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+ .con
+{
+  max-width:300px;
+  height:500px;
+}
+img 
+{
+  margin-top: 60px;
+  margin-left:50px;
+}
+.con h1
+{
+  font-family:'Lexend Deca', sans-serif;
+    margin-left:50px;
+    font-size: 50px;
+}
+.con p
+{
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family:'Lexend Deca', sans-serif;
+  text-align: center;
+ 
+}
+button
+{
+  border-radius: 60px;
+  background-color:hsl(0, 0%, 95%);
+  padding:20px 60px;
+  text-align: center;
+  margin:50px 50px;
+  font-weight: bold;
+}
+button:active,.container__left button:active,.container__mid button:active,.container__right button:active
+{
+  cursor: pointer;
+  background-color: transparent;
+  border:2px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+}
+.container__left button
+{
+  color: hsl(31, 77%, 52%);
+}
+.container__mid button
+{
+  color:  hsl(184, 100%, 22%);
+}
+.container__right button
+{
+  color:  hsl(179, 100%, 13%);
+}
+
+.container__left
+{
+  background-color:  hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px ;
+}
+.container__mid
+{
+  background-color: hsl(184, 100%, 22%);
+}
+.container__right
+{
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+@media screen and (max-width:930px){
+  button{
+    font-size:10px;
+    padding:20px 40px; 
+  }
+}
+  @media screen and (max-width:700px){
+  .container
+  {
+    flex-direction: column;
+   justify-content: flex-start;
+  }
+  .con{
+    max-width: 70%;
+  }
+  .container__left
+{
+  border-top-right-radius: 10px;
+  border-bottom-left-radius:0px ;
+}
+.container__right
+{
+  border-top-right-radius:0px ;
+  border-bottom-left-radius: 10px;
+}
+img{
+  margin-left: 30%;
+}
+.con h1
+{
+  margin-left: 30%;
+}
+.con p
+{
+  max-width: 40%;
+  margin-left: 30%;
+}
+button{
+margin-left: 40%;
+}
+@media screen and (max-width:500px) {
+  body{
+    background-color: red;
+  }
+  button
+  {
+    margin-top: 4px;
+  }
+  
+}
+  
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="con container__left">
+      <img src="images/icon-sedans.svg" alt="sedan">
+      
+  <h1>SEDANS</h1>
+  <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+  or on your next road trip.</p>
+  <button>Learn More</button>
+</div>
+<div class="con container__mid">
+ 
+  <img src="images/icon-suvs.svg" alt="suvs">
+  <h1>SUVS</h1>
+  <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+  and off-road adventures.</p>
+  <button>Learn More</button>
+</div>
+<div class="con container__right">
+  <img src="images/icon-luxury.svg" alt="luxury">
+ 
+  <h1>LUXURY</h1>
+  <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+  rental and arrive in style.</p>
+  <button>Learn More</button>
+</div>
+</div>
+</body>
+</html>
